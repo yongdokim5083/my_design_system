@@ -1,0 +1,18 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "overrides": [
+    {
+      "files": ["**/*.{ts,tsx,css}"]
+    }
+  ],
+  "rules": {
+    "function-no-unknown": null,
+    "annotation-no-unknown": null,
+    "function-name-case": null,
+    "value-keyword-case": null,
+    "property-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "no-empty-source": null,
+    "selector-class-pattern": null
+  }
+}

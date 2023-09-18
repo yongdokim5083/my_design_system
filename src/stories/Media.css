@@ -1,0 +1,61 @@
+.bl-media {
+  /* 가로로 배열 flexbox, 위로 붙이려면 algin-items 를 flext-start, 아래로 붙이려면 flext-end */
+  display: flex;
+  align-items: center;
+}
+
+.bl_media_imgWrapper {
+  /* 스크린 크기를 축소할 때, 이미지 및 텍스트 양쪽을 축소하기 위해 지정 */
+  flex: 0 1 27.5833%; /* 순서 flex-grow:0 / flex-shrink:1 / flex-basis:27.58333% 의미 */
+  margin-right: 3.3333%; /* 40 / 1200 결과 3.33333% */
+}
+
+.bl_media_imgWrapper > img {
+  width: 100%;
+}
+
+.bl_Media_body {
+  flex: 1;
+}
+
+.bl_media_body > *:last-child {
+  margin-bottom: 0; /* 미리 가장 마지막 자녀 요소의 여백을 채우는 설정을 해두어 요소가 늘어나거나 줄어드는 경우에도 자동적으로 상하 여백을 제어 */
+}
+
+.bl_media_ttl {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@media screen and (width <= 768px) {
+  .bl_media {
+    display: block; /* 미디어 쿼리 적용시 flexbox 해제 */
+  }
+
+  .bl_media_imgWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .bl_media_txt {
+    margin-right: 0;
+  }
+
+  .bl_media__rev .bl_media_body {
+    margin-right: 0;
+  }
+}
+
+.bl_media.bl_media__rev {
+  flex-direction: row-reverse;
+}
+
+.bl_media__rev .bl_media_imgWrapper {
+  margin-right: 0;
+}
+
+.bl_media__rev .bl_media_body {
+  margin-right: 3.3333%;
+  text-align: right;
+}

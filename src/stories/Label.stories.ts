@@ -28,11 +28,11 @@ type Story = StoryObj<typeof meta>;
 //   }
 // };
 
-export const Secondary: Story = {
-  args: {
-    label: 'New'
-  }
-};
+// export const Secondary: Story = {
+//   args: {
+//     label: 'New'
+//   }
+// };
 
 export const Large: Story = {
   args: {

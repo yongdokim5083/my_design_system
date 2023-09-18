@@ -1,4 +1,12 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["autodocs", "stylelint"]
+  "css.validate": true,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "stylelint.validate": ["postcss", "typescript", "typescriptreact", "js", "css", "scss"],
+  "stylelint.enable": true
 }
