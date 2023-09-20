@@ -12,13 +12,13 @@ interface MediaProps {
 /**
  * Primary UI component for user interaction
  */
-export const Media = ({ ttl, txt, backgroundColor, rev, ...props }: MediaProps) => {
+export const Media = ({ ttl, txt, rev, ...props }: MediaProps) => {
   return (
     // <span className={['el_label', `el_label--${size}`].join(' ')} style={{ backgroundColor }} {...props} {...props}>
     //   {label}
     // </span>
 
-    <div className={['bl_media', `bl_media__${rev}`].join(' ')}>
+    <div className={['bl_media', `bl_media__${rev}`].join(' ')} {...props}>
       <div className="bl_media_imgWrapper">
         <img
           alt="사진: 손에 든 스마트폰"

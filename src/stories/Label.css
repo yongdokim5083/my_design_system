@@ -1,4 +1,4 @@
-.el-label {
+.el_label {
   display: inline-block;
   padding: 0.2em 0.3em;
   font-size: 0.75rem;
@@ -7,7 +7,7 @@
   background-color: #e25c00;
 }
 
-.el-label--large {
+.el_label--large {
   display: inline-block;
   padding: 0.1em 0.2em;
   font-size: 1.5rem;

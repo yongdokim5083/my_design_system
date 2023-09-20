@@ -2,7 +2,7 @@
   "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
   "overrides": [
     {
-      "files": ["**/*.{ts,tsx,css}"]
+      "files": ["**/*.{css}"]
     }
   ],
   "rules": {
